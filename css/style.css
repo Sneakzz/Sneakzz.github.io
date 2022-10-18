@@ -49,6 +49,7 @@ ul, ol{
 
 a {
   text-decoration: none;
+  color: var(--black);
 }
 
 img {
@@ -57,19 +58,83 @@ img {
 }
 
 .container{
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
-/* Navigation */
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--silver);
+  box-shadow: var(--shadow-small);
+}
+
+#header-content {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 16px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Header Logo styling */
+#header-logo-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#header-logo-img-content {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: url("../assets/images/profile-image.jpeg") center/cover;
+}
+
+#header-logo-img-content:hover {
+  cursor: pointer;
+}
+
+#header-logo-text {
+  font-size: 1.25rem;
+}
+
+/* Header navigation styling */
+header nav {
+  display: flex;
+  gap: 5rem;
+}
+
+.header-nav-item {
+  font-size: 1rem;
+}
+
+.header-nav-item:hover {
+  color: var(--primary-normal);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
 
 /* Section: Welcome */
+#welcome {
+  height: 100vh;
+  background: url("../assets/images/hero-bg-img.svg") no-repeat center/cover;
+}
+
+#welcome-content {}
+
 
 /* Section: About */
 
 /* Section: Projects */
 
 /* Footer */
+footer {
+
+}
 
 /* Media query's */
 @media only screen and (max-width: var(--breakpoint-medium)) {

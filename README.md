@@ -1,8 +1,11 @@
-# My Personal Portfolio Website
+# My Personal Website
 
-This repo contains my minimalistic personal portfolio website.
+This repo contains my minimalistic personal website.
 
-* Personal Portfolio -> [Live link](https://sneakzz.github.io/)
+* Personal Website -> [Live link](https://sneakzz.github.io/)
+
+  This project was designed using:
+    * Figma
 
   This project was built using:
     * HTML5

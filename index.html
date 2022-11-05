@@ -5,137 +5,330 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Kenny Veys">
+  <meta name="description" content="Software Developer with a very big passion in many aspects of IT.">
+  <meta property="og:description" content="Software Developer with a very big passion in many aspects of IT.">
+  <meta property="og:site_name" content="Kenny Veys Personal Website">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sneakzz.github.io/">
+  <meta property="og:title" content="Kenny Veys - Wearer of many IT hats!">
+  <title>Kenny Veys - Wearer of many IT hats!</title>
+  <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Kenny Veys - Web/Software Developer</title>
 </head>
 
 <body>
-  <main>
-    <!-- Navigation -->
-    <nav>
-      <ul id="navbar">
-        <div class="container">
-          <li><a href="#welcome-section">About</a></li>
-          <li><a href="#projects">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+  <!-- Header -->
+  <header>
+    <div id="header-content" class="container">
+      <div id="header-logo-content">
+        <div id="header-logo-img-content">
         </div>
-      </ul>
-    </nav>
+        <span id="header-logo-text">kenny veys</span>
+      </div>
+      <nav>
+        <a href="#welcome" class="header-nav-item">home</a>
+        <a href="#about" class="header-nav-item">about</a>
+        <a href="#projects" class="header-nav-item">projects</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Section: Welcome -->
-    <section id="welcome-section">
-      <div class="container">
-        <div id="welcome-content">
-          <h1>Hello, i'm Kenny.</h1>
-          <p>Web/Software Developer</p>
+  <!-- Section: Welcome -->
+  <section id="welcome">
+    <div id="welcome-content">
+      <h1>hey, i'm kenny veys</h1>
+      <p>
+        Software developer with a very big passion in many different aspects of IT.
+      </p>
+      <div id="welcome-content-buttons">
+        <a href="#projects" class="btn btn-primary">projects</a>
+        <a href="#about" class="btn btn-secondary">find out more</a>
+      </div>
+    </div>
+
+    <a href="#about" class="btn btn-icon-large btn-secondary btn-next-page">
+      <svg class="icon">
+        <use href="./assets/icons/icon-defs.svg#icon-arrow"></use>
+      </svg>
+    </a>
+  </section>
+
+  <!-- Section: About -->
+  <section id="about">
+    <div class="content container">
+      <div class="content-intro">
+        <h2 class="content-intro-title">about me</h2>
+        <div class="content-intro-separator"></div>
+        <p class="content-intro-description">
+          Here is a bit more information about who i am, what i enjoy doing and also my skills and interests in IT!
+        </p>
+      </div>
+
+      <div class="content-main">
+        <div class="content-main-section">
+          <h3>Get to know me!</h3>
+          <div class="content-main-section-description">
+            <p>
+              I'm a self taught software developer with a very strong curiosity that loves to learn about other fields
+              in IT.
+            </p>
+            <div class="icon-separator">
+              <svg class="icon icon-primary">
+                <use href="./assets/icons/icon-defs.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <p>
+              In addition to software development i also enjoy spending time advancing my skills in the fields of system
+              and network engineering as well as cyber security which i find extremely fascinating!
+              Things like setting up virtual machine systems of all kinds, using different operating systems, working
+              through development/system/network problems, researching different topics and so much more are things i do
+              for fun.
+            </p>
+            <div class="icon-separator">
+              <svg class="icon icon-primary">
+                <use href="./assets/icons/icon-defs.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <p>
+              Over time i've learned to research and pick things up quickly and so i believe i can wear multiple hats in
+              the IT space when needed.
+            </p>
+            <br>
+            <p>
+              Interested in having a chat? Don't hesitate to contact me.
+            </p>
+          </div>
+
+          <a href="mailto:kenny.veys@gmail.com" target="_blank" class="btn btn-primary">
+            <svg class="icon">
+              <use href="./assets/icons/icon-defs.svg#icon-mail"></use>
+            </svg>
+            <span>email me</span>
+          </a>
+        </div>
+        <div class="content-main-section">
+          <h3>My Skillset & Toolbox</h3>
+          <div id="about-showcase-skillset">
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-html5"></use>
+              </svg>
+              <span>html5</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-css3"></use>
+              </svg>
+              <span>css3</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-javascript"></use>
+              </svg>
+              <span>javascript</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-npm"></use>
+              </svg>
+              <span>npm</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-nodejs"></use>
+              </svg>
+              <span>nodejs</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-java"></use>
+              </svg>
+              <span>java</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-spring"></use>
+              </svg>
+              <span>spring</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-vscode"></use>
+              </svg>
+              <span>vscode</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-github"></use>
+              </svg>
+              <span>github</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-git"></use>
+              </svg>
+              <span>git</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-mysql"></use>
+              </svg>
+              <span>mysql</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-docker"></use>
+              </svg>
+              <span>docker</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-linux"></use>
+              </svg>
+              <span>linux</span>
+            </div>
+            <div class="showcase-icon-container">
+              <svg class="icon icon-showcase">
+                <use href="./assets/icons/icon-defs.svg#icon-windows"></use>
+              </svg>
+              <span>windows</span>
+            </div>
+          </div>
+          <h3>My Skillset & Toolbox</h3>
+          <div id="about-showcase-interests">
+            <div class="interest-label">security</div>
+            <div class="interest-label">virtualization</div>
+            <div class="interest-label">ci/cd</div>
+            <div class="interest-label">automation</div>
+            <div class="interest-label">scripting</div>
+            <div class="interest-label">cloud</div>
+            <div class="interest-label">systems</div>
+            <div class="interest-label">hardware</div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="projects">
-      <div class="container">
-        <h2>These are some of my projects..</h2>
+    <a href="#projects" class="btn btn-icon-large btn-secondary btn-next-page">
+      <svg class="icon">
+        <use href="./assets/icons/icon-defs.svg#icon-arrow"></use>
+      </svg>
+    </a>
+  </section>
 
-        <div id="project-list">
-            <a href="https://github.com/Sneakzz/ATM-Machine" target="_blank" class="project-tile">
-              <div class="card-image">
-                <img src="./img/atmMachine.PNG" alt="">
+  <!-- Section: Projects -->
+  <section id="projects">
+    <div class="content container">
+      <div class="content-intro">
+        <h2 class="content-intro-title">projects</h2>
+        <div class="content-intro-separator"></div>
+        <p class="content-intro-description">
+          These are just some of my previous projects.
+        </p>
+      </div>
+
+      <div class="content-main">
+        <div class="content-main-section">
+          <h3>A bit more information.</h3>
+          <div class="content-main-section-description">
+            <p>
+              These projects are small creations that spawned from pure interest, passion and drive to learn.
+            </p>
+            <div class="icon-separator">
+              <svg class="icon icon-primary">
+                <use href="./assets/icons/icon-defs.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <p>
+              I strongly believe in learning by doing and so i find creating small projects is a very helpful way to
+              learn and practice concepts, techniques and new technologies.
+            </p>
+            <div class="icon-separator">
+              <svg class="icon icon-primary">
+                <use href="./assets/icons/icon-defs.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <p>
+              Feel free to click on an image to see a live view of the project if there is one, or the source code
+              button if you want to find out more about a project. This will take you to the github repository page 
+              where you can see more information about the project itself.
+            </p>
+            <br>
+            <p>
+              I have quite a few other things on my personal github page that are not displayed on this website so if
+              you are interested, feel free to take a look on my personal github profile.
+            </p>
+          </div>
+
+          <a href="https://github.com/Sneakzz" target="_blank" class="btn btn-primary">
+            <svg class="icon">
+              <use href="./assets/icons/icon-defs.svg#icon-github"></use>
+            </svg>
+            <span>find me on github</span>
+          </a>
+        </div>
+        <div class="content-main-section">
+          <div class="project-card">
+            <div class="project-card-image">
+              <img src="./assets/images/atm-machine.png" alt="atm machine project picture">
+            </div>
+            <div class="project-card-information">
+              <h4>ATM Machine</h4>
+              <p>
+                Built using Java and JavaFX, the idea is to simulate the basic workings
+                and functionality of an ATM machine.
+              </p>
+              <div class="project-card-information-extra">
+                <a href="https://github.com/Sneakzz/ATM-Machine" target="_blank"
+                  class="btn btn-secondary btn-medium">source code</a>
               </div>
-              <div class="project-title">
-                <h3>Java Atm Machine</h3>
-              </div>
-              <div class="card-labels">
-  
-              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <a href="https://sneakzz.github.io/Practical-JS/Index.html" target="_blank" class="project-card-image">
+              <img src="./assets/images/todo-app.png" alt="todo app project picture">
             </a>
-
-          <a href="https://sneakzz.github.io/FreeCodeCamp/Responsive%20Web%20Design%20Projects/Product%20Landing%20Page/" target="_blank" class="project-tile">
-            <div class="card-image">
-              <img src="./img/productPage2.png" alt="">
+            <div class="project-card-information">
+              <h4>Todo List App</h4>
+              <p>
+                A vanilla javascript project built from scratch while following and learning from the Watch And
+                Code free practical javascript course.
+              </p>
+              <div class="project-card-information-extra">
+                <a href="https://github.com/Sneakzz/Practical-JS" target="_blank"
+                  class="btn btn-secondary btn-medium">source code</a>
+              </div>
             </div>
-            <div class="project-title">
-              <h3>Product Landing Page</h3>
+          </div>
+          <div class="project-card">
+            <a href="https://sneakzz.github.io/FreeCodeCamp/Responsive%20Web%20Design%20Projects/Product%20Landing%20Page/" target="_blank" class="project-card-image">
+              <img src="./assets/images/gpu-website.png" alt="gpu website picture">
+            </a>
+            <div class="project-card-information">
+              <h4>Mockup Product Page</h4>
+              <p>
+                A simple mockup product landing page created with just plain HTML5 and CSS3.
+              </p>
+              <div class="project-card-information-extra">
+                <a href="https://github.com/Sneakzz/FreeCodeCamp/tree/master/Responsive%20Web%20Design%20Projects/Product%20Landing%20Page"
+                  target="_blank" class="btn btn-secondary btn-medium">source code</a>
+              </div>
             </div>
-            <div class="card-labels">
-
-            </div>
-          </a>
-
-          <a href="https://sneakzz.github.io/FreeCodeCamp/Responsive%20Web%20Design%20Projects/Technical%20Documentation%20Page/" target="_blank" class="project-tile">
-            <div class="card-image">
-              <img src="./img/techDocPage2.png" alt="">
-            </div>
-            <div class="project-title">
-              <h3>Technical Documentation Page</h3>
-            </div>
-            <div class="card-labels">
-
-            </div>
-          </a>
-
-          <a href="https://sneakzz.github.io/Practical-JS/Index.html" target="_blank" class="project-tile">
-            <div class="card-image">
-              <img src="./img/todoList2.png" alt="">
-            </div>
-            <div class="project-title">
-              <h3>Todo List</h3>
-            </div>
-            <div class="card-labels">
-              <span class="wip-label">Wip</span>
-            </div>
-          </a>
-
-          <a href="https://sneakzz.github.io/Learning-Projects/html-css-js/StudentList/" target="_blank" class="project-tile">
-            <div class="card-image">
-              <img src="./img/classRegister2.png" alt="">
-            </div>
-            <div class="project-title">
-              <h3>Class register</h3>
-            </div>
-            <div class="card-labels">
-              <span class="wip-label">Wip</span>
-            </div>
-          </a>
-
-          <a href="https://sneakzz.github.io/FreeCodeCamp/Responsive%20Web%20Design%20Projects/Tribute%20page/" target="_blank" class="project-tile">
-            <div class="card-image">
-              <img src="./img/tributePage2.png" alt="">
-            </div>
-            <div class="project-title">
-              <h3>Tribute Page</h3>
-            </div>
-            <div class="card-labels">
-            </div>
-          </a>
-
-        </div>
-        <a id="profile-link" target="_blank" href="https://github.com/Sneakzz">See more</a>
-      </div>
-    </section>
-
-    <!-- Section: Contact -->
-    <section id="contact">
-      <div class="container">
-        <div id="contact-text">
-          <h1>Let's work together...</h1>
-          <p>How do you like your coffee?</p>
-        </div>
-
-        <div id="contact-links">
-          <a href="https://github.com/Sneakzz" target="_blank">GitHub</a>
-          <a href="mailto:kenny.veys@gmail.com" target="_blank">Send a mail</a>
-          <a href="tel:555-555-5555" target="_blank">Call me</a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <div class="container">
-        <h4>Created by Kenny Veys, 2018 &copy;</h4>
-      </div>
-    </footer>
-
-  </main>
+  <!-- Footer -->
+  <footer>
+    <div id="footer-content" class="container">
+      <p>
+        Created by Kenny Veys, 2022 &copy;
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>

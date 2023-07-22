@@ -28,7 +28,7 @@
   /* btn padding */
   --btn-padding-large: 1rem 3rem;
   --btn-padding-med: 0.75rem 2.25rem;
-  --btn-padding-smol: 0.5rem 1.5rem;
+  --btn-padding-small: 0.5rem 1.5rem;
 }
 
 /* Globals */
@@ -116,11 +116,20 @@ button {
   font-weight: 600;
 }
 
+.btn-large {
+  padding: var(--btn-padding-large);
+}
+.btn-medium {
+  padding: var(--btn-padding-med);
+}
+.btn-small {
+  padding: var(--btn-padding-small);
+}
+
 .btn-primary {
   color: var(--white);
   background-color: var(--primary-normal);
   border: 2px solid var(--primary-normal);
-  padding: var(--btn-padding-large);
 }
 
 .btn-primary:hover {
@@ -132,7 +141,6 @@ button {
   color: var(--primary-dark);
   background-color: var(--white);
   border: 2px solid var(--primary-dark);
-  padding: var(--btn-padding-large);
 }
 
 .btn-secondary:hover {
@@ -243,7 +251,7 @@ header nav {
   text-transform: uppercase;
 }
 
-#welcome #welcome-content p {
+#welcome #welcome-content #intro {
   font-size: 1.5rem;
   margin: 0 auto;
   max-width: 95%;
@@ -254,6 +262,22 @@ header nav {
   justify-content: center;
   gap: 2rem;
   padding-top: 1.25rem;
+}
+
+#welcome-content-extra {
+  display: flex;
+  justify-content: center;
+}
+
+#welcome-content-extra #thm-connect {
+  display: flex;
+  flex-direction: column;
+  scale: 110%;
+}
+
+#welcome-content-extra #thm-connect .connect-message {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 /* styles used for both the About and Projects section */
@@ -344,21 +368,30 @@ header nav {
 /* Section: Projects */
 #projects {
   background-color: var(--l2-grey);
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
+}
+
+.card-section {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
 }
 
 .project-card {
   background-color: var(--white);
-  height: 15rem;
+  height: 27rem;
+  max-width: 48%;
   display: flex;
+  flex-direction: column;
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 2px 6px 12px rgba(96, 96, 96, 0.4);
 }
 
 .project-card .project-card-image {
-  min-height: 0;
-  max-width: 35%;
+  max-height:50%;
+  overflow:hidden;
 }
 
 .project-card .project-card-image img {
@@ -369,6 +402,7 @@ header nav {
 
 .project-card .project-card-information {
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
@@ -412,7 +446,7 @@ footer #footer-content p {
 }
 
 /* Media query's */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   .content-main {
     flex-direction: column;
     gap: 3rem;
@@ -421,10 +455,6 @@ footer #footer-content p {
   #header-content {
     flex-direction: column;
     gap: 1.5rem;
-  }
-
-  .project-card .project-card-information .project-card-information-extra .btn-secondary {
-    padding: var(--btn-padding-med);
   }
 }
 
@@ -454,7 +484,7 @@ footer #footer-content p {
     letter-spacing: 1px;
   }
   
-  #welcome #welcome-content p {
+  #welcome #welcome-content #intro {
     font-weight: 500;
     font-size: 1.25rem;
     max-width: 95%;
@@ -464,6 +494,10 @@ footer #footer-content p {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+  }
+
+  #welcome-content-extra #thm-connect {
+    scale: 95%;
   }
 
   .content {
@@ -521,7 +555,7 @@ footer #footer-content p {
   }
 
   .project-card .project-card-information .project-card-information-extra .btn-secondary {
-    padding: var(--btn-padding-smol);
+    padding: var(--btn-padding-small);
     font-size: 0.75rem;
   }
 }

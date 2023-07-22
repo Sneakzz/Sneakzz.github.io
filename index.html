@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Kenny Veys">
-  <meta name="description" content="Software Developer with a very big passion in many aspects of IT.">
-  <meta property="og:description" content="Software Developer with a very big passion in many aspects of IT.">
+  <meta name="description" content="Self-taught, highly curious and very passionate about various aspects of IT.">
+  <meta property="og:description" content="Self-taught, highly curious and very passionate about various aspects of IT.">
   <meta property="og:site_name" content="Kenny Veys Personal Website">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sneakzz.github.io/">
@@ -38,16 +38,26 @@
   <section id="welcome">
     <div id="welcome-content">
       <h1>hey, i'm kenny veys</h1>
-      <p>
-        Software developer with a very big passion in many different aspects of IT.
+      <p id="intro">
+        I'm self-taught, highly curious and very passionate about various aspects of IT.
       </p>
       <div id="welcome-content-buttons">
-        <a href="#projects" class="btn btn-primary">projects</a>
-        <a href="#about" class="btn btn-secondary">find out more</a>
+        <a href="#projects" class="btn btn-primary btn-large">projects</a>
+        <a href="#about" class="btn btn-secondary btn-large">find out more</a>
+      </div>
+      <div id="welcome-content-extra">
+        <div id="thm-connect">
+          <span class="connect-message">Check me out on TryHackMe!</span>
+
+          <a href="https://tryhackme.com/p/SlothIT" target="_blank" rel="noopener noreferrer">
+            <script src="https://tryhackme.com/badge/1133267"></script>
+          </a>
+
+        </div>
       </div>
     </div>
 
-    <a href="#about" class="btn btn-icon-large btn-secondary btn-next-page">
+    <a href="#about" class="btn btn-icon-large btn-secondary btn-large btn-next-page">
       <svg class="icon">
         <use href="./assets/icons/icon-defs.svg#icon-arrow"></use>
       </svg>
@@ -100,7 +110,7 @@
             </p>
           </div>
 
-          <a href="mailto:kenny.veys@gmail.com" target="_blank" class="btn btn-primary">
+          <a href="mailto:kenny.veys@gmail.com" target="_blank" class="btn btn-primary btn-large">
             <svg class="icon">
               <use href="./assets/icons/icon-defs.svg#icon-mail"></use>
             </svg>
@@ -195,7 +205,6 @@
               <span>windows</span>
             </div>
           </div>
-          <h3>My Skillset & Toolbox</h3>
           <div id="about-showcase-interests">
             <div class="interest-label">security</div>
             <div class="interest-label">virtualization</div>
@@ -210,7 +219,7 @@
       </div>
     </div>
 
-    <a href="#projects" class="btn btn-icon-large btn-secondary btn-next-page">
+    <a href="#projects" class="btn btn-icon-large btn-secondary btn-large btn-next-page">
       <svg class="icon">
         <use href="./assets/icons/icon-defs.svg#icon-arrow"></use>
       </svg>
@@ -261,14 +270,14 @@
             </p>
           </div>
 
-          <a href="https://github.com/Sneakzz" target="_blank" class="btn btn-primary">
+          <a href="https://github.com/Sneakzz" target="_blank" class="btn btn-primary btn-large">
             <svg class="icon">
               <use href="./assets/icons/icon-defs.svg#icon-github"></use>
             </svg>
             <span>find me on github</span>
           </a>
         </div>
-        <div class="content-main-section">
+        <div class="content-main-section card-section">
           <div class="project-card">
             <div class="project-card-image">
               <img src="./assets/images/atm-machine.png" alt="atm machine project picture">
@@ -281,7 +290,7 @@
               </p>
               <div class="project-card-information-extra">
                 <a href="https://github.com/Sneakzz/ATM-Machine" target="_blank"
-                  class="btn btn-secondary btn-medium">source code</a>
+                  class="btn btn-secondary btn-small">source code</a>
               </div>
             </div>
           </div>
@@ -297,7 +306,7 @@
               </p>
               <div class="project-card-information-extra">
                 <a href="https://github.com/Sneakzz/Practical-JS" target="_blank"
-                  class="btn btn-secondary btn-medium">source code</a>
+                  class="btn btn-secondary btn-small">source code</a>
               </div>
             </div>
           </div>
@@ -306,13 +315,13 @@
               <img src="./assets/images/gpu-website.png" alt="gpu website picture">
             </a>
             <div class="project-card-information">
-              <h4>Mockup Product Page</h4>
+              <h4>Mock Product Page</h4>
               <p>
                 A simple mockup product landing page created with just plain HTML5 and CSS3.
               </p>
               <div class="project-card-information-extra">
                 <a href="https://github.com/Sneakzz/FreeCodeCamp/tree/master/Responsive%20Web%20Design%20Projects/Product%20Landing%20Page"
-                  target="_blank" class="btn btn-secondary btn-medium">source code</a>
+                  target="_blank" class="btn btn-secondary btn-small">source code</a>
               </div>
             </div>
           </div>
@@ -329,6 +338,9 @@
       </p>
     </div>
   </footer>
-</body>
 
+  <script>
+    document.querySelector("#thm_badge").removeAttribute("onclick");
+  </script>
+</body>
 </html>

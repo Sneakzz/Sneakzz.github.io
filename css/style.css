@@ -475,8 +475,20 @@ footer #footer-content p {
     padding: var(--btn-padding-med);
   }
 
+  .btn-next-page {
+    bottom: 3.5rem;
+  }
+
+  #header-content {
+    gap: 0.5rem;
+  }
+
   header nav {
     gap: 3rem;
+  }
+
+  #welcome #welcome-content {
+    gap: 1.3rem;
   }
 
   #welcome #welcome-content h1 {

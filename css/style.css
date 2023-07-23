@@ -50,7 +50,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -99,11 +100,6 @@ button {
   height: 1rem;
 }
 
-/* .icon-separator {
-  display: flex;
-  justify-content: center;
-} */
-
 /* global button styles */
 .btn {
   display: inline-flex;
@@ -112,16 +108,26 @@ button {
   gap: 0.5rem;
   border-radius: 4px;
   text-transform: uppercase;
-  /* box-shadow: var(--shadow-small); */
   letter-spacing: 1px;
   font-weight: 600;
+}
+
+.btn-large {
+  padding: var(--btn-padding-large);
+}
+
+.btn-medium {
+  padding: var(--btn-padding-med);
+}
+
+.btn-small {
+  padding: var(--btn-padding-small);
 }
 
 .btn-dark {
   color: var(--silver);
   background-color: var(--gray-800);
   border: 1px solid var(--gray-600);
-  padding: var(--btn-padding-med);
 }
 
 .btn-dark:hover {
@@ -133,7 +139,6 @@ button {
   color: var(--white);
   background-color: var(--primary-normal);
   border: 2px solid var(--primary-normal);
-  padding: var(--btn-padding-med);
 }
 
 .btn-primary:hover {
@@ -145,7 +150,6 @@ button {
   color: var(--primary-dark);
   background-color: var(--white);
   border: 2px solid var(--primary-dark);
-  padding: var(--btn-padding-large);
 }
 
 .btn-secondary:hover {
@@ -197,52 +201,67 @@ header {
 
 /* Section: Welcome */
 #welcome {
-  /* height: 100vh; */
-  /* min-height: 45rem; */
-  /* background: url("../assets/images/hero-bg-img.svg") no-repeat center/cover; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   flex: 1 0 auto;
-  /* position: relative; */
+  /* gap: 10rem;
+  padding-top: 5rem; */
+  justify-content: space-evenly;
 }
 
-#welcome #welcome-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  text-align: center;
-  max-width: 45rem;
-}
-
-#welcome #welcome-content h1 {
-  font-size: 4rem;
+#welcome #overview h1 {
+  font-size: 5rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: var(--gray-100)
 }
 
-/* #welcome #welcome-content p {
-  font-size: 1.5rem;
-  margin: 0 auto;
-  max-width: 95%;
-} */
+#welcome #overview #description {
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  max-width: 90%;
+  color: var(--gray-300);
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
 
-#welcome #welcome-content #welcome-content-buttons {
+#welcome #overview #description-extra {
+  padding-top: 6rem;
+  font-size: 2.25rem;
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--gray-200)
+}
+
+#welcome #overview #description-extra span {
+  color:var(--primary-normal);
+}
+
+#welcome #connect {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding-top: 1.25rem;
+  justify-content: space-around;
 }
 
+#welcome #connect>div {
+  scale: 120%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
 
+#welcome #connect .connect-message {
+  color: var(--gray-400);
+  font-weight: 400;
+}
+
+#welcome #connect .thm_margin {
+  margin: 0 !important;
+}
 
 /* Footer */
 footer {
-  /* background-color: var(--grey); */
-  /* height: 3rem; */
   flex-shrink: 0;
-  border-top: 1px solid var(--d-grey);
+  border-top: 1px solid var(--gray-800);
 }
 
 footer #footer-content {
@@ -250,6 +269,8 @@ footer #footer-content {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  color: var(--gray-700);
+  padding: 0.5rem 0;
 }
 
 footer #footer-content p {
@@ -259,19 +280,41 @@ footer #footer-content p {
 }
 
 /* Media query's */
-/* @media only screen and (max-width: 900px) {
-  .content-main {
-    flex-direction: column;
-    gap: 3rem;
+@media only screen and (max-width: 1200px) {
+  #welcome {
+    justify-content: space-evenly;
+    gap: 0;
+    padding-top: 0;
+    /* gap: 7rem; */
   }
 
-  #header-content {
-    flex-direction: column;
-    gap: 1.5rem;
+  #welcome #overview h1 {
+    font-size: 2.75rem;
   }
 
-  .project-card .project-card-information .project-card-information-extra .btn-secondary {
-    padding: var(--btn-padding-med);
+  #welcome #overview #description {
+    font-size: 1rem;
+    max-width: 100%;
+    padding-left: 0.5rem;
+  }
+
+  #welcome #overview #description-extra {
+    padding-top: 5rem;
+    font-size: 1.75rem;
+  }
+
+  #welcome #connect {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  #welcome #connect>div {
+    scale: 100%;
+  }
+
+  #welcome #connect #github-connect {
+    align-self: center;
   }
 }
 
@@ -280,39 +323,49 @@ footer #footer-content p {
     width: 95%
   }
 
-  .btn {
+  #header-content {
+    padding: 8px 0;
+  }
+
+  /* #welcome {
+    gap: 4rem;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+  } */
+
+  #welcome {
+    gap: 0;
+    padding-top: 0;
+    justify-content: space-evenly;
+  }
+
+  #welcome #overview h1 {
+    font-size: 2rem;
+  }
+
+  #welcome #overview #description {
     font-size: 0.875rem;
+    max-width: 100%;
+    padding-left: 0.5rem;
   }
 
-  .btn-primary {
-    padding: var(--btn-padding-med);
-  }
-
-  .btn-secondary {
-    padding: var(--btn-padding-med);
-  }
-
-  header nav {
-    gap: 3rem;
-  }
-
-  #welcome #welcome-content h1 {
-    font-size: 2.5rem;
+  #welcome #overview #description-extra {
+    font-size: 1.125rem;
+    padding-top: 4rem;
     letter-spacing: 1px;
   }
-  
-  #welcome #welcome-content p {
-    font-weight: 500;
-    font-size: 1.25rem;
-    max-width: 95%;
-  }
-  
-  #welcome #welcome-content #welcome-content-buttons {
-    flex-direction: column;
+
+  #welcome #connect {
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 1rem;
-    align-items: center;
   }
 
+  #welcome #connect>div {
+    scale: 95%;
+  }
 
-  
-} */
+  #welcome #connect #github-connect {
+    align-self: center;
+  }
+}

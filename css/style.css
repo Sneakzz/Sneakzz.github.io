@@ -69,6 +69,7 @@ ol {
 }
 
 a {
+  color: var(--gray-100);
   text-decoration: none;
 }
 
@@ -98,6 +99,11 @@ button {
 .icon-small {
   width: 1rem;
   height: 1rem;
+}
+
+/* global text styles */
+.text-primary {
+  color: var(--primary-normal);
 }
 
 /* global button styles */
@@ -196,7 +202,21 @@ header {
 }
 
 #header-logo-text {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+}
+
+#header-content #contact {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#header-content #contact i{
+  color: var(--gray-100);
+  font-size: 2rem;
+}
+
+#header-content #contact i:hover{
+  color: var(--primary-normal);
 }
 
 /* Section: Welcome */
@@ -204,42 +224,45 @@ header {
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
-  /* gap: 10rem;
-  padding-top: 5rem; */
-  justify-content: space-evenly;
+  /* gap: 10rem; */
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  justify-content: space-between;
 }
 
-#welcome #overview h1 {
-  font-size: 5rem;
+#welcome #about h1 {
+  font-size: 2.5rem;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--gray-100)
 }
 
-#welcome #overview #description {
+#welcome #about #description {
   font-size: 1.25rem;
   letter-spacing: 2px;
   max-width: 90%;
-  color: var(--gray-300);
-  padding-left: 1rem;
+  color: var(--gray-200);
+  padding-left: 0.5rem;
   padding-top: 0.5rem;
 }
 
-#welcome #overview #description-extra {
-  padding-top: 6rem;
+#welcome #about-extra {
+  /* padding-top: 6rem; */
   font-size: 2.25rem;
   text-align: center;
   letter-spacing: 2px;
-  color: var(--gray-200)
+  color: var(--gray-200);
+  padding: 2rem 0;
 }
 
-#welcome #overview #description-extra span {
+#welcome #about-extra span {
   color:var(--primary-normal);
 }
 
 #welcome #connect {
   display: flex;
   justify-content: space-around;
+  justify-self: flex-end;
 }
 
 #welcome #connect>div {
@@ -252,6 +275,7 @@ header {
 #welcome #connect .connect-message {
   color: var(--gray-400);
   font-weight: 400;
+  text-align: center;
 }
 
 #welcome #connect .thm_margin {
@@ -262,6 +286,7 @@ header {
 footer {
   flex-shrink: 0;
   border-top: 1px solid var(--gray-800);
+  margin-top: 0.5rem;
 }
 
 footer #footer-content {
@@ -282,24 +307,24 @@ footer #footer-content p {
 /* Media query's */
 @media only screen and (max-width: 1200px) {
   #welcome {
-    justify-content: space-evenly;
+    /* justify-content: space-evenly;
     gap: 0;
-    padding-top: 0;
+    padding-top: 0; */
     /* gap: 7rem; */
   }
 
-  #welcome #overview h1 {
-    font-size: 2.75rem;
+  #welcome #about h1 {
+    font-size: 2rem;
   }
 
-  #welcome #overview #description {
+  #welcome #about #description {
     font-size: 1rem;
-    max-width: 100%;
-    padding-left: 0.5rem;
+    /* max-width: 100%; */
+    /* padding-left: 0.5rem; */
   }
 
-  #welcome #overview #description-extra {
-    padding-top: 5rem;
+  #welcome #about-extra {
+    /* padding-top: 5rem; */
     font-size: 1.75rem;
   }
 
@@ -325,6 +350,15 @@ footer #footer-content p {
 
   #header-content {
     padding: 8px 0;
+    flex-direction: column;
+  }
+
+  #header-content #contact {
+    margin-left: 2rem;
+  }
+  
+  #header-content #contact i{
+    font-size: 1.5rem;
   }
 
   /* #welcome {
@@ -334,24 +368,24 @@ footer #footer-content p {
   } */
 
   #welcome {
-    gap: 0;
+    /* gap: 0;
     padding-top: 0;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
   }
 
-  #welcome #overview h1 {
-    font-size: 2rem;
+  #welcome #about h1 {
+    font-size: 1.5rem;
   }
 
-  #welcome #overview #description {
+  #welcome #about #description {
     font-size: 0.875rem;
     max-width: 100%;
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
   }
 
-  #welcome #overview #description-extra {
-    font-size: 1.125rem;
-    padding-top: 4rem;
+  #welcome #about-extra {
+    font-size: 1.25rem;
+    /* padding-top: 4rem; */
     letter-spacing: 1px;
   }
 
@@ -362,7 +396,7 @@ footer #footer-content p {
   }
 
   #welcome #connect>div {
-    scale: 95%;
+    scale: 90%;
   }
 
   #welcome #connect #github-connect {

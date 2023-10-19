@@ -234,6 +234,7 @@ header {
 
 #welcome #connect {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -241,7 +242,6 @@ header {
   scale: 120%;
   display: flex;
   flex-direction: column;
-  /* gap: 0.25rem; */
 }
 
 #welcome #connect .connect-message {
@@ -257,7 +257,6 @@ footer {
 }
 
 footer #footer-content {
-  height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -273,40 +272,21 @@ footer #footer-content p {
 
 /* Media query's */
 @media only screen and (max-width: 1200px) {
-  #welcome {
-    /* justify-content: space-evenly;
-    gap: 0;
-    padding-top: 0; */
-    /* gap: 7rem; */
-  }
-
   #welcome #about h1 {
-    font-size: 2rem;
-  }
-
-  #welcome #about #description {
-    font-size: 1rem;
-    /* max-width: 100%; */
-    /* padding-left: 0.5rem; */
-  }
-
-  #welcome #about-extra {
-    /* padding-top: 5rem; */
     font-size: 1.75rem;
   }
 
-  #welcome #connect {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1rem;
+  #welcome #about p {
+    font-size: 1rem;
+    max-width: 75%;
+  }
+
+  #welcome #about-extra {
+    font-size: 1.75rem;
   }
 
   #welcome #connect>div {
     scale: 100%;
-  }
-
-  #welcome #connect #github-connect {
-    align-self: center;
   }
 }
 
@@ -325,19 +305,7 @@ footer #footer-content p {
   }
   
   #header-content #contact i{
-    font-size: 1.5rem;
-  }
-
-  /* #welcome {
-    gap: 4rem;
-    justify-content: space-evenly;
-    padding-top: 2rem;
-  } */
-
-  #welcome {
-    /* gap: 0;
-    padding-top: 0;
-    justify-content: space-evenly; */
+    font-size: 1.25rem;
   }
 
   #welcome #about h1 {
@@ -347,26 +315,14 @@ footer #footer-content p {
   #welcome #about p {
     font-size: 0.875rem;
     max-width: 100%;
-    /* padding-left: 0.5rem; */
   }
 
   #welcome #about-extra {
     font-size: 1.25rem;
-    /* padding-top: 4rem; */
     letter-spacing: 1px;
-  }
-
-  #welcome #connect {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1rem;
   }
 
   #welcome #connect>div {
     scale: 90%;
-  }
-
-  #welcome #connect #github-connect {
-    align-self: center;
   }
 }

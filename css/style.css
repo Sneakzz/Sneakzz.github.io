@@ -214,7 +214,7 @@ header {
   font-size: 1.25rem;
   letter-spacing: 2px;
   /* max-width: 90%; */
-  max-width: 60%;
+  max-width: 70%;
   color: var(--gray-200);
   padding-left: 0.5rem;
   padding-top: 1rem;
@@ -233,6 +233,7 @@ header {
 }
 
 #welcome #connect {
+  visibility: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
